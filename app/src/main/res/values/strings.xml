@@ -3,4 +3,10 @@
     <string name="day">Дневной график</string>
     <string name="change">Сменный график</string>
     <string name="mix">Смешанный график</string>
+    <string name="dayWork">Дней отработано</string>
+    <string name="partTimeJob">Подработок</string>
+    <string name="premium">Персональная надбавка</string>
+    <string name="calculation">Расчет</string>
+    <string name="prize">Премия 20%</string>
+    <string name="oneTimePrize">Разовая премия</string>
 </resources>

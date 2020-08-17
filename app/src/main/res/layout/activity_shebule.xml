@@ -1,9 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ShebuleActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/dayButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="dayShebule"
+        android:text="@string/day" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/chengeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="changeShebule"
+        android:text="@string/change" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/mixButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="mixShebule"
+        android:text="@string/mix" />
+
+</LinearLayout>

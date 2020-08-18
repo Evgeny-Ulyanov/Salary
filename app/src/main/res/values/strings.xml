@@ -6,8 +6,11 @@
     <string name="dayWork">Дней отработано</string>
     <string name="partTimeJob">Подработок</string>
     <string name="premium">Персональная надбавка</string>
-    <string name="calculation">Расчет</string>
-    <string name="prize">Премия 20%</string>
+    <string name="calculation">Рассчет</string>
+    <string name="prize">Премия 30%</string>
     <string name="oneTimePrize">Разовая премия</string>
     <string name="chempack">https://www.chempack.ru/</string>
+    <string name="_0">0</string>
+    <string name="_3000">3000</string>
+    <string name="_200">200</string>
 </resources>

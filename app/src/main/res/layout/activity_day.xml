@@ -10,6 +10,7 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dayWorkEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -22,6 +23,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dayMoreEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -29,12 +31,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/partTimeJob"
-            android:text="0"
+            android:text="@string/_0"
             android:inputType="number" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/allowanceEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -43,11 +46,12 @@
             android:layout_height="wrap_content"
             android:hint="@string/premium"
             android:inputType="number"
-            android:text="3000"/>
+            android:text="@string/_3000"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/prizeEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -56,18 +60,18 @@
             android:layout_height="wrap_content"
             android:hint="@string/oneTimePrize"
             android:inputType="number"
-            android:text="200" />
+            android:text="@string/_200" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/prize"
         android:textSize="20sp"/>
 
     <Button
+
         android:layout_marginTop="25dp"
         android:id="@+id/button"
         android:layout_width="match_parent"

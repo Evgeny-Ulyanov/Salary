@@ -24,4 +24,8 @@ public class ShebuleActivity extends AppCompatActivity {
 
     public void mixShebule(View view) {
     }
+
+    public void chempack(View view) {
+        startActivity(new Intent(ShebuleActivity.this, WebActivity.class));
+    }
 }

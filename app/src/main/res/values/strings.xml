@@ -9,4 +9,5 @@
     <string name="calculation">Расчет</string>
     <string name="prize">Премия 20%</string>
     <string name="oneTimePrize">Разовая премия</string>
+    <string name="chempack">https://www.chempack.ru/</string>
 </resources>

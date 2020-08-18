@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,28 +7,56 @@
     android:orientation="vertical"
     tools:context=".ShebuleActivity">
 
-    <Button
-        android:layout_marginTop="10dp"
-        android:id="@+id/dayButton"
+    <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="dayShebule"
-        android:text="@string/day" />
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:layout_marginTop="10dp"
-        android:id="@+id/chengeButton"
-        android:layout_width="match_parent"
+        <Button
+            android:id="@+id/dayButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="dayShebule"
+            android:text="@string/day" />
+
+        <Button
+            android:id="@+id/chengeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="changeShebule"
+            android:text="@string/change" />
+
+        <Button
+            android:id="@+id/mixButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="mixShebule"
+            android:text="@string/mix" />
+
+    </LinearLayout>
+
+    <TextView
+        android:clickable="true"
+        android:onClick="chempack"
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="changeShebule"
-        android:text="@string/change" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="178dp"
+        android:layout_marginEnd="175dp"
+        android:layout_marginBottom="44dp"
+        android:text="@string/chempack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:layout_marginTop="10dp"
-        android:id="@+id/mixButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="mixShebule"
-        android:text="@string/mix" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

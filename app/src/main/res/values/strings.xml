@@ -13,4 +13,5 @@
     <string name="_0">0</string>
     <string name="_3000">3000</string>
     <string name="_200">200</string>
+    <string name="email">Отправить email разработчику</string>
 </resources>

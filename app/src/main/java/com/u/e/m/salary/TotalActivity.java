@@ -1,14 +1,23 @@
 package com.u.e.m.salary;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 public class TotalActivity extends AppCompatActivity {
 
     TextView totalTextView;
+    String[] addresses = {"ulyanov.1992@list.ru"};
+    String subject = "Результаты использования приложения.";
+    String textEmail = "Здравствуйте, Евгений. Используя Ваше приложение, я смог произвести рассчет своей заработной платы.";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +42,7 @@ public class TotalActivity extends AppCompatActivity {
                 int allowanceInt = Integer.parseInt(allowance); //персональная надбавка
                 int prizeInt = Integer.parseInt(prize); //разовая премия
 
+
                 totalTextView.setText("Оклад " + (hoursInt * oneHours) +
                         "\nНадбавка " + allowanceInt +
                         "\nПремия " + ((hoursMoreInt + hoursInt) * oneHours) * 0.3f +
@@ -54,10 +64,35 @@ public class TotalActivity extends AppCompatActivity {
 
 
     }
-}
 
-//        ("Оклад " + (hours*stavka)  +
-//        "\nПремия " + (hours*stavka)*0.3f +
-//        "\nНадбавка " + nadbavka +
-//        "\nДо НДФЛ " + ((hours*stavka)*1.3f+nadbavka) +
-//        "\nЧистыми " + ((hours*stavka)*1.3f+nadbavka)*0.87f);
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        switch (item.getItemId()) {
+            case R.id.email:
+                sendEmail();
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void sendEmail() {
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        intent.setData(Uri.parse("mailto:"));
+        intent.putExtra(Intent.EXTRA_EMAIL, addresses);
+        intent.putExtra(Intent.EXTRA_SUBJECT, subject);
+        intent.putExtra(Intent.EXTRA_TEXT, textEmail);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
+
+    }
+}

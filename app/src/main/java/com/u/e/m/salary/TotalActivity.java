@@ -78,10 +78,23 @@ public class TotalActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.email:
                 sendEmail();
-                return true;
+                break;
+            case R.id.phone:
+                callDeveloper();
+                break;
+            default:
+                break;
+
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void callDeveloper() {
+        Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:89085196899"));
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
     }
 
     private void sendEmail() {

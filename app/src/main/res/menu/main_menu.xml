@@ -6,5 +6,9 @@
         android:id="@+id/email"
         android:title="@string/email"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/phone"
+        android:title="Позвонить разработчику"
+        app:showAsAction="never" />
 
 </menu>

@@ -34,6 +34,8 @@ public class DayActivity extends AppCompatActivity {
         String daysMore = dayMoreEditText.getEditText().getText().toString();
         String daysAllovance = allowanceEditText.getEditText().getText().toString();
         String daysPrize = prizeEditText.getEditText().getText().toString();
+        String reguestCode = "1";
+        intent.putExtra("reguestCode", reguestCode);
         intent.putExtra("days", days);
         intent.putExtra("daysMore", daysMore);
         intent.putExtra("daysAllovance", daysAllovance);

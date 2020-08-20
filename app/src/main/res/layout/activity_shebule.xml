@@ -42,6 +42,16 @@
             android:onClick="mixShebule"
             android:text="@string/mix" />
 
+        <TextView
+            android:textColor="#ffffff"
+            android:hyphenationFrequency="full"
+            android:layout_marginTop="10dp"
+            android:id="@+id/infoTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/info" />
+
     </LinearLayout>
 
     <TextView

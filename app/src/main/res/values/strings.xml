@@ -14,4 +14,5 @@
     <string name="_3000">3000</string>
     <string name="_200">200</string>
     <string name="email">Отправить email разработчику</string>
+    <string name="info">Выбрав график и введя колличество отработанных дней вы можете получить рассчет своей заработной платы.</string>
 </resources>

@@ -15,6 +15,7 @@
         android:layout_height="wrap_content">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dayEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/dayWork"
@@ -28,6 +29,7 @@
         android:layout_height="wrap_content">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dayMoreText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/partTimeJob"
@@ -42,6 +44,7 @@
         android:layout_height="wrap_content">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/allowanceText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/premium"
@@ -56,6 +59,7 @@
         android:layout_height="wrap_content">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/prizeText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/oneTimePrize"

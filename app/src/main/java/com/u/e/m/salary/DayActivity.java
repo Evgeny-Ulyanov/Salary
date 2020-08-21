@@ -1,8 +1,11 @@
 package com.u.e.m.salary;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 
@@ -42,4 +45,5 @@ public class DayActivity extends AppCompatActivity {
         intent.putExtra("daysPrize", daysPrize);
         startActivity(intent);
     }
+
 }
